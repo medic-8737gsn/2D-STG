@@ -11,7 +11,8 @@ GameObject:
   - 212: {fileID: 21292350}
   - 50: {fileID: 5065364}
   - 114: {fileID: 11431556}
-  m_Layer: 0
+  - 58: {fileID: 5841174}
+  m_Layer: 11
   m_Name: EnemyBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5099263, y: -0.8530469, z: 0}
+  m_LocalPosition: {x: 3.6191676, y: 1.2129363, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -48,6 +49,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &5841174
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129088}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.07
 --- !u!114 &11431556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,6 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  lifeTime: 5
 --- !u!212 &21292350
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -84,7 +100,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -717405371
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300002, guid: 9a0317eefd42740f0997b1c4587a47ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

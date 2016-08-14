@@ -9,7 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 446108}
   - 212: {fileID: 21276502}
-  m_Layer: 0
+  - 60: {fileID: 6088724}
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +27,7 @@ GameObject:
   - 4: {fileID: 423722}
   - 50: {fileID: 5022608}
   - 114: {fileID: 11453022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PlayerBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +43,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 496378}
   - 212: {fileID: 21215308}
-  m_Layer: 0
+  - 60: {fileID: 6050344}
+  m_Layer: 10
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2973545, y: 0.7874277, z: 0}
+  m_LocalPosition: {x: 3.613998, y: 1.2129363, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -107,6 +109,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &6050344
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153094}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.011045113, y: 0.08086169}
+      - {x: -0.03018345, y: 0.03966093}
+      - {x: -0.029321805, y: 0.019972205}
+      - {x: -0.011045113, y: -0.08000004}
+      - {x: -0.00015558302, y: -0.08000004}
+      - {x: 0.03018342, y: 0.0084325075}
+      - {x: 0.03018342, y: 0.030705929}
+      - {x: 0.011044845, y: 0.08086169}
+--- !u!60 &6088724
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121426}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -0.011045113, y: 0.08086169}
+      - {x: -0.03018345, y: 0.03966093}
+      - {x: -0.029321805, y: 0.019972205}
+      - {x: -0.011045113, y: -0.08000004}
+      - {x: -0.00015558302, y: -0.08000004}
+      - {x: 0.03018342, y: 0.0084325075}
+      - {x: 0.03018342, y: 0.030705929}
+      - {x: 0.011044845, y: 0.08086169}
 --- !u!114 &11453022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  lifeTime: 1
 --- !u!212 &21215308
 SpriteRenderer:
   m_ObjectHideFlags: 1
